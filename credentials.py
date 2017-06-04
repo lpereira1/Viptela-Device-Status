@@ -1,3 +1,3 @@
 username = 'admin'
 password = 'admin'
-server= '192.168.250.230'
+server= '1.1.1.1'
