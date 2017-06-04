@@ -2,7 +2,7 @@ from flask import render_template, request, url_for
 import requests
 import json
 from app import app
-from .forms import LoginForm
+
 
 import credentials
 
@@ -12,11 +12,6 @@ import credentials
 def index():
     return render_template('index.html', title='Device Status')
 
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    form = LoginForm()
-    return render_template('login.html',title='Sign In', form=form)
 
 @app.route("/results", methods=['POST'])
 def results():
