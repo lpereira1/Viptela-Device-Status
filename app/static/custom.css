@@ -1,0 +1,18 @@
+/* CSS used here will be applied after bootstrap.css */
+
+body {
+ background: url('bg_suburb.jpg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.panel-default {
+ opacity: 0.9;
+ margin-top:150px;
+}
+.form-group.last {
+ margin-bottom:0px;
+}
+

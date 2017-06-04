@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-5">
+            <div class="panel panel-default">
+                <div class="panel-heading"> <strong>Device Verification</strong>
+
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" method="post" action="{{ url_for('results') }}">
+                        <div class="form-group">
+                            <label class="col-md-5 control-label" for="serial">Serial Number</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="serial" name="serial" required="" placeholder="Serial Number" type="text">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button class="btn btn-success btn-sm" type="submit">Submit</button>
+                                <button class="btn btn-default btn-sm" type="reset">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">Not Registered? <a href="#">Register here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<div class="container">
+
+    {% if data.Device == 'Not Found' %}
+    <div class="col-md-6 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"> <strong>Results</strong>
+                       <p></p>
+                    <p><B>No Devices Found</B></p>
+                </div>
+            </div>
+    {% else %}
+	<div class="col-md-6 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading"> <strong>Results</strong>
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Device Serial</th>
+              <th>Configuration Status</th>
+              <th>Operating Mode</th>
+
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>1</td>
+              <td>{{ data.Device }}</td>
+              <td>{{ data.Status }}</td>
+              <td>{{ data.operatingmode }}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+	</div>
+</div>
+                <p>Return to Home</p>
+            </div>
+    </div>
+    {% endif %}
+
+
+
+
+{% endblock %}
