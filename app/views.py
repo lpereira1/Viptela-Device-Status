@@ -1,19 +1,19 @@
 from flask import render_template, request, url_for
 import requests
 import json
-from app import app
+from app import application
 
 
 import credentials
 
-@app.route('/')
-@app.route('/index')
+@application.route('/')
+@application.route('/index')
 
 def index():
     return render_template('index.html', title='Device Status')
 
 
-@app.route("/results", methods=['POST'])
+@application.route("/results", methods=['POST'])
 def results():
     # specify the url
     session = requests.session()
