@@ -11,6 +11,7 @@
                        <p></p>
                     <p><B>No Devices Found</B></p>
                 </div>
+                <p><a href="/">Return to Home</a></p>
             </div>
     {% else %}
 	<div class="col-md-6 col-md-offset-4">
@@ -21,18 +22,18 @@
         <table class="table table-hover">
           <thead>
             <tr>
-              <th>#</th>
               <th>Device Serial</th>
-              <th>Configuration Status</th>
+              <th>Device Status</th>
+              <th>Status Detail</th>
               <th>Operating Mode</th>
 
             </tr>
           </thead>
           <tbody id="myTable">
             <tr>
-              <td>1</td>
               <td>{{ data.Device }}</td>
               <td>{{ data.Status }}</td>
+              <td>{{ data.statusdetail }}</td>
               <td>{{ data.operatingmode }}</td>
 
             </tr>

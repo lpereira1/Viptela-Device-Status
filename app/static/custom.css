@@ -1,7 +1,7 @@
 /* CSS used here will be applied after bootstrap.css */
 
 body {
- background: url('bg_suburb.jpg') no-repeat center center fixed;
+ background: url('bg_dark-sky.jpg') no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
