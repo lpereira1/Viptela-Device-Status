@@ -26,6 +26,7 @@
               <th>Device Status</th>
               <th>Status Detail</th>
               <th>Operating Mode</th>
+              <th>DeviceID</th>
 
             </tr>
           </thead>
@@ -35,6 +36,7 @@
               <td>{{ data.Status }}</td>
               <td>{{ data.statusdetail }}</td>
               <td>{{ data.operatingmode }}</td>
+              <td>{{ data.systemip }}</td>
 
             </tr>
           </tbody>
@@ -45,7 +47,7 @@
       </div>
 	</div>
 </div>
-                <p>Return to Home</p>
+                <p><a href="/">Return to Home</a></p>
             </div>
     </div>
     {% endif %}
