@@ -5,7 +5,7 @@
 <div class="container">
 
     {% if data.Device == 'Not Found' %}
-    <div class="col-md-6 col-md-offset-4">
+    <div class="col-md-7 col-md-offset-3">
             <div class="panel panel-default">
                 <div class="panel-heading"> <strong>Results</strong>
                        <p></p>
@@ -14,7 +14,7 @@
                 <p><a href="/">Return to Home</a></p>
             </div>
     {% else %}
-	<div class="col-md-6 col-md-offset-4">
+	<div class="col-md-9 col-md-offset-3">
             <div class="panel panel-default">
                 <div class="panel-heading"> <strong>Results</strong>
     <div class="row">
@@ -27,6 +27,9 @@
               <th>Status Detail</th>
               <th>Operating Mode</th>
               <th>DeviceID</th>
+              <th>Private1</th>
+              <th>Gold</th>
+
 
             </tr>
           </thead>
@@ -37,6 +40,8 @@
               <td>{{ data.statusdetail }}</td>
               <td>{{ data.operatingmode }}</td>
               <td>{{ data.systemip }}</td>
+              <td>{{ private1 }}</td>
+              <td>{{ gold }}</td>
 
             </tr>
           </tbody>
