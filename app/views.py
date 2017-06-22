@@ -54,9 +54,9 @@ def results():
 
         for i in json.loads(colordata.text)['data']:
             print(i['local-color'])
-            if 'gold' == i['local-color'] and 'up'== i['state']::
+            if 'gold' == i['local-color'] and 'up'== i['state']:
                 countgold += 1
-            elif 'private1' == i['local-color'] and 'up'== i['state']::
+            elif 'private1' == i['local-color'] and 'up'== i['state']:
                 countprivate1 += 1
 
     if countgold == 0:
