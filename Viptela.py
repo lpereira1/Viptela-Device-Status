@@ -4,6 +4,8 @@ import pprint
 
 import credentials
 
+''' This Script is used to do debugging test of the python code which can then be inserted into app folder for use in the flask app 
+without having to deal with the web portion'''
 
 session = requests.session()
 payload = {"j_username":credentials.username, "j_password": credentials.password, 'submit': 'Log In'}
